@@ -1,7 +1,7 @@
 #  WeatherApp
 
 Una aplicación del clima desarrollada con **React + Vite**, que muestra información meteorológica actualizada de cualquier ciudad.  
-Su interfaz es moderna, rápida y responsiva, con un favicon personalizado que combina **programación y clima**. ☀️💻
+Su interfaz es moderna, rápida y responsiva, con un favicon personalizado que combina **programación y clima**. 
 
 ---
 
