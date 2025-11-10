@@ -1,0 +1,137 @@
+.hourly-forecast {
+  width: 100%;
+}
+
+.hourly-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 0 16px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.hourly-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hourly-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hourly-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.hourly-time {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hourly-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.hourly-temp {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.hourly-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hourly-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.hourly-detail .detail-icon {
+  font-size: 0.9rem;
+  width: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hourly-item {
+    min-width: 100px;
+    padding: 16px 12px;
+  }
+  
+  .hourly-icon {
+    font-size: 1.8rem;
+    height: 36px;
+  }
+  
+  .hourly-temp {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hourly-scroll {
+    gap: 12px;
+    padding: 8px 0 12px 0;
+  }
+  
+  .hourly-item {
+    min-width: 90px;
+    padding: 14px 10px;
+  }
+  
+  .hourly-icon {
+    font-size: 1.6rem;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+  
+  .hourly-temp {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .hourly-detail {
+    font-size: 0.7rem;
+  }
+}
